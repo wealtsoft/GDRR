@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GDRR is ..." />
+    <meta
+      name="keywords"
+      content="GDDR, Login, Sign Up, Code, CSS, HTML, JAVASCRIPT"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="img/Logo.png" />
+
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  user-zoom: initial;
+}
+
+#container {
+  background-image: url(img/background-img.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#header {
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+img.logo {
+  width: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+img.logo:hover {
+  width: 45px;
+  border: 1px solid #0000ff;
+}
+
+.gdrr-contain {
+  align-content: center;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+}
+
+#org-name {
+  align-items: center;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: -10px;
+}
+
+#org-name::selection {
+  user-select: none;
+}
+
+a.btn-top-signup {
+  color: #8a4584;
+  border: 2px solid #83cfcf;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn-top-signup:hover {
+  color: #fff;
+  background-color: #8a4584;
+  font-weight: 800;
+}
+
+h2.wel {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #83cfcf;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  opacity: 0.5;
+}
+
+div.log-container {
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  width: fit-content;
+  color: #000;
+  border-radius: 20px;
+  border: 3px solid #83cfcf;
+}
+
+form {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label#login {
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 0;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  display: none;
+}
+
+label.email {
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+label.password {
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+input {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #83cfcf;
+  background-color: ;
+  padding: 2px 10px;
+}
+
+input:active {
+  border: #8a4584;
+}
+
+input:focus {
+  border: none;
+}
+
+a.ctr-sign {
+  font-weight: 700;
+  text-align: center;
+  align-content: right;
+  display: inline-flex;
+
+  padding: 0;
+  color: #;
+}
+
+a.ctr-sign:hover {
+  color: #8a4584;
+}
+
+a.help {
+  color: #8a4584;
+}
+
+a.help:hover {
+  color: #888;
+}
+
+#btn-login {
+  background-color: #83cfcf;
+  display: block;
+  border-radius: 10px;
+  border-bottom: 2px solid #8a4584;
+}
+
+#btn-login:hover {
+  background-color: #8a4584;
+  font-weight: 700;
+  border-radius: 10px;
+  border-bottom: 2px solid #83cfcf;
+}
+
+#btn-login:active {
+  background-color: #83cfcf;
+}
+
+section.alter {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px dotted #ff0055;
+  padding-top: 5px;
+}
+
+    </style>
+    <title>GDRR | Login</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <header id="header">
+        <div class="logo-contain">
+          <img title="GDRR" src="img/Logo.png" alt="GDRR" class="logo" />
+        </div>
+
+        <div class="gdrr-contain">
+          <h1 id="org-name">GDRR</h1>
+        </div>
+
+        <a href="#" title="Sign Up" class="btn-top-signup">
+          <p class="top-signup" title="Sign Up">Sign Up</p>
+        </a>
+      </header>
+
+      <h2 class="wel">Welcome</h2>
+
+      <div class="log-container">
+        <form action="" method="get">
+          <label id="login" for="Login">Login</label>
+
+          <label class="email" for="Email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="in-email"
+            placeholder="olajolami@gmail.com"
+            required
+          />
+
+          <label class="password" for="Password">Password</label>
+          <input type="password" name="Password" id="in-password" required />
+
+          <input type="submit" value="Login" id="btn-login" />
+        </form>
+        <a href="#" class="help">Forgotten Password</a>
+        <section class="alter">
+          <p class="alter">Don't have an account?</p>
+          <a href="#" target="_blank" class="ctr-sign" title="Sign Up"
+            >Sign Up</a
+          >
+        </section>
+      </div>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>
